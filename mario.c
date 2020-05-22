@@ -14,13 +14,13 @@ int main(void)
             printf(" ");
         }
         for (int k=0; k<x; k++) {
-            printf("x");
+            printf("#");
         }
         for (int k=0; k<2; k++) {
             printf(" ");
         }
         for (int k=0; k<x; k++) {
-            printf("x");
+            printf("#");
         }
         for (int k=x; k < height; k++) {
             printf(" ");

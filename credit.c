@@ -70,16 +70,16 @@ while (newNum > 99) {
 /* determine if card # is valid and if so, what type of card it is */
 if (sumdigfinal % 10 == 0) {
     if (numdig == 15 && (firsttwodig == 34 || firsttwodig == 37)) {
-        printf("AMEX \n");
+        printf("AMEX\n");
     }
     else if (numdig == 16 && (firsttwodig > 50 && firsttwodig < 56)) {
-        printf("MASTERCARD \n");
+        printf("MASTERCARD\n");
     }
     else if ((numdig == 13 || numdig == 16) && (firsttwodig - (firsttwodig % 10)) == 40) {
-        printf("VISA \n");
+        printf("VISA\n");
     }
     else {
-        printf("INVALID \n");
+        printf("INVALID\n");
     }
 }
 else if (sumdigfinal % 10 != 0) {

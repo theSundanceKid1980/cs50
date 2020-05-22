@@ -83,7 +83,7 @@ if (sumdigfinal % 10 == 0) {
     }
 }
 else if (sumdigfinal % 10 != 0) {
-    printf("INVALID \n");
+    printf("INVALID\n");
 }
 
 }

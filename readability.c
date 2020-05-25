@@ -18,8 +18,8 @@ int main(void)
     int words = count_words(txt);
     int sent = count_sent(txt);
 
-    float avglet = (100*letters)/words;
-    float avgsent = (100*sent)/words;
+    float avglet = (float) (100*letters)/words;
+    float avgsent = (float) (100*sent)/words;
 
     int index = round(0.0588*avglet - 0.296*avgsent - 15.8);
 
@@ -27,6 +27,9 @@ int main(void)
     printf("%i letter(s)\n", letters);
     printf("%i word(s)\n", words);
     printf("%i sentence(s)\n", sent);
+    printf("Avg letters: %f\n", avglet);
+    printf("Avg sentences: %f\n", avgsent);
+    printf("raw index: %f\n", 0.0588*avglet - 0.296*avgsent - 15.8);
     */
 
     if (index < 16 && index > 1)
@@ -72,7 +75,7 @@ int count_words(string s)
     return wordcount;
 }
 
-/* functiont o count sentences in a text */
+/* function to count sentences in a text */
 int count_sent(string s)
 {
     int len = strlen(s);
